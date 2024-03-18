@@ -26,3 +26,4 @@ else:
 print(38) #숫자 출력
 print("문자열 출력")
 print([1,2,3])
+
