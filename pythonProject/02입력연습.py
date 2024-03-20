@@ -26,4 +26,4 @@ if(hour > 12):
     hour -= 12
     print(f"오후{hour:02}시{min:02}분{sec:02}초") # 02 = 두 자리 차지
 else:
-    print(f"오전{hour:03}시{min:02}분{sec:02}초")
+    print(f"오전{hour:02}시{min:02}분{sec:02}초")
