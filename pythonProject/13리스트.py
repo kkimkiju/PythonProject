@@ -68,18 +68,29 @@ while True:
     rand = random.randrange(1, 46)
     if rand not in ls:
         ls.append(rand)
-    if (len(ls)) == 6: break
+    if (len(ls)) == 6:
+        break
 
 print(ls)
+# ============================================
+# print("숫자 입력 : ", end=" ")
+# num = list(map(int, input().split()))
+#
+# jjak = []
+# hol = []
+#
+# for e in num:
+#     if e % 2 == 0:
+#         jjak.append(e)
+#     else:
+#         hol.append(e)
+#
+# print(f"홀수 : {hol}")
+# print(f"짝수 : {jjak}")
+# =============================================
 
-print("입력하세요 :", end=" ")
-num = list(map(int, input().split(" ")))
-jjak = []
-hol = []
-for e in num:
-    if e % 2 == 0:
-        jjak.append(e)
-    else:
-        hol.append(e)
-print(f"홀수 : {hol}")
-print(f"짝수 : {jjak}")
+num = list(map(int, input("정수 입력 : ").split()))
+even = list(filter(lambda x:x % 2 == 0, num)) # num에 있는 1을 넣는다 가정하면 첫 번째 x는 넣은 숫자 두 번째 x는 %2 하는 계산식을 의미
+odd = list(filter(lambda x:x % 2 == 1, num))
+print(f"홀수 {odd}")
+print(f"짝수 {even}")
