@@ -1,7 +1,7 @@
 # 계좌 개설
 def open_account(name):  # 매개변수와 반환값이 있는 함수 선언
     print(f"{name}님의 계좌가 개설 되었습니다.")
-    return name
+
 
 
 def deposit(input):  # 잔액과 입금액을 매개변수로 전달 받음 (입금)
